@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>the document</title>
+  <style>
+    img {
+      transition: all 2s;
+    }
+    .round {
+      border-radius: 50%;
+      transform: rotate(25deg) scale(2);
+      box-shadow: 0 0 10px black;
+    }
+  </style>
 </head>
 <body>
 
-
-
-
+  <img class="nice-image class2 class3" src="https://source.unsplash.com/random/600x600" alt="">
 
   <div class="items">
     <div class="item">
@@ -19,16 +27,19 @@
 
     <div class="item item2">
       <img src="https://source.unsplash.com/random/300x300" alt="">
-      <p>the document</p>
+      <p>the document 2</p>
     </div>
 
     <div class="item">
-      <h2>sub div</h2>
+      <h2>
+        sub div
+        <span>I am hidden</span>
+      </h2>
+      <p class="pizza">this is how many pizzas I ate! 🍕</p>
       <p>the document 3</p>
     </div>
 
   </div>
-
 
   <!-- put the script tag before the closing body tag -->
   <!-- can get around this using the DOMContentLoaded Event -->
