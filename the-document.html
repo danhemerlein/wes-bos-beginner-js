@@ -13,20 +13,27 @@
       transform: rotate(25deg) scale(2);
       box-shadow: 0 0 10px black;
     }
+
+    .wrapper {
+      width: 100%;
+      height: 50px;
+      color: white;
+      background: red;
+    }
   </style>
 </head>
 <body>
 
-  <img class="nice-image class2 class3" src="https://source.unsplash.com/random/600x600" alt="">
+  <img class="nice-image class2 class3" src="https://source.unsplash.com/random/500x500" alt="" data-name="dan">
 
   <div class="items">
     <div class="item">
-      <img src="https://source.unsplash.com/random/300x300" alt="">
+      <img src="https://source.unsplash.com/random/300x300" alt="" class="custom" data-name="dan2">
       <p>the document</p>
     </div>
 
     <div class="item item2">
-      <img src="https://source.unsplash.com/random/300x300" alt="">
+      <img src="https://source.unsplash.com/random/300x300" alt="" data-name="dan3ß">
       <p>the document 2</p>
     </div>
 
@@ -43,6 +50,8 @@
 
   <!-- put the script tag before the closing body tag -->
   <!-- can get around this using the DOMContentLoaded Event -->
-  <script src="./the-document/index.js"></script>
+
+  <!-- <script src="./the-document/index.js"></script> -->
+  <script src="./the-document/creating.js"></script>
 </body>
 </html>

@@ -54,16 +54,16 @@ pizzaList.insertAdjacentText('afterbegin', '🍕');
 
 const img = document.querySelector('.nice-image');
 
-console.log(img.classList);
+// console.log(img.classList);
 // not to be confused with img.className
 
-console.log(img.classList.add('open'));
+// console.log(img.classList.add('open'));
 
-console.log(img.classList);
-console.log(img.classList.length);
-console.log(img.classList.remove('class2'));
+// console.log(img.classList);
+// console.log(img.classList.length);
+// console.log(img.classList.remove('class2'));
 
-console.log(img.classList);
+// console.log(img.classList);
 
 function toggleRound() {
   img.classList.toggle('round');
@@ -72,3 +72,36 @@ function toggleRound() {
 img.addEventListener('click', toggleRound);
 
 console.log(img.classList.contains('nice-image'));
+
+// BUILT IN AND CUSTOM DATA ATTRIBUTES
+
+// many of these can be used as a getter or setter
+img.alt = 'bridge pic.';
+img.width = 200;
+
+window.addEventListener('load', function() {
+  // this is only a getter - not a setter
+  console.log(img.naturalWidth);
+})
+
+console.log(im g.getAttribute("alt"));
+
+img.setAttribute('alt', 'super awesome big bridge');
+
+console.log(img.getAttribute("alt"));
+
+// you should not do this in case the standard changes in the future and includes such and attribute that you want to create
+// img.setAttribute('dan-is-cool', 'dan is really cool');
+
+// if you do want to use you own custom attributes - use data attributes
+
+// ex. data-[name]
+
+const custom = document.querySelector('.custom');
+
+// this will return an object of all the data attributes on the element
+console.log(custom.dataset);
+
+custom.addEventListener('click', function() {
+  alert(`Welcome ${custom.dataset.name}`)
+})
