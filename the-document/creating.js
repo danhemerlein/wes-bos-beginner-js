@@ -5,17 +5,16 @@ console.log('creating js');
 const myParagraph = document.createElement("p");
 myParagraph.textContent = 'i am a p tag';
 myParagraph.classList.add('special');
-console.log(myParagraph);
+// console.log(myParagraph);
 
 const myImage = document.createElement('img');
 myImage.src = "https://source.unsplash.com/random/300x300";
 myImage.alt = "nice photo!";
-console.log(myImage);
+// console.log(myImage);
 
 const myDiv = document.createElement('div');
 myDiv.classList.add('wrapper')
-console.log(myDiv);
-
+// console.log(myDiv);
 
 // this will trigger a re-paint of the page - everytime hit the document object
 
