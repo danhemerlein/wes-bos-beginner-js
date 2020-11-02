@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" name="form">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" value="Dan Hemerlein" />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        value="danhemerlein@gmail.com"
+      />
+      <input type="checkbox" name="agree" id="agree" />
+      <label for="agree">I agree to the terms and conditions</label>
+      <hr />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="./events/forms.js"></script>
+  </body>
+</html>
