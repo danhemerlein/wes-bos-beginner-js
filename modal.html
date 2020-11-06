@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal!</title>
+    <style>
+      .modal-outer {
+        display: grid;
+        background: hsla(50, 100%, 50%, 0.5);
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.8s;
+        pointer-events: none;
+      }
+
+      .modal-inner {
+        max-width: 600px;
+        min-width: 400px;
+        min-height: 250px;
+        padding: 2rem;
+        background: white;
+        overflow: scroll;
+        /* hide the modal until we need it */
+      }
+
+      p {
+        margin: 0;
+        font-size: 34px;
+      }
+
+      .modal-outer.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">click</button>
+    <img src="https://picsum.photos/200" alt="" class="img" />
+
+    <div class="modal-outer">
+      <div class="modal-inner">
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          temporibus, aliquam quaerat ipsum in neque ullam. Placeat quaerat,
+          veritatis magnam, officia ducimus necessitatibus corrupti, dolorum nam
+          ex ratione dolores provident.
+        </p>
+      </div>
+    </div>
+    <script src="./modal/index.js"></script>
+  </body>
+</html>

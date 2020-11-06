@@ -17,10 +17,10 @@ form.addEventListener('submit', function(event) {
   }
 })
 
-'keyup'
-'keydown'
-'focus'
-'blur'
+// 'keyup'
+// 'keydown'
+// 'focus'
+// 'blur'
 
 const nameInput = form.name;
 
