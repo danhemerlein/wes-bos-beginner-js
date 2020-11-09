@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabs</title>
+
+    <style>
+      body {
+        background: grey;
+      }
+
+      .wrapper {
+        background: white;
+        padding: 1rem;
+      }
+
+      button {
+        padding: 8px 16px;
+        border: none;
+        outline: none;
+        background: darkorange;
+        cursor: pointer;
+      }
+
+      button[aria-selected="true"] {
+        background: firebrick;
+      }
+
+      button:hover {
+        background: green;
+      }
+
+      .tabpanel {
+        background: firebrick;
+        padding: 1rem;
+      }
+
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tabs">
+        <div role="tablist" aria-label="programming languages">
+          <button role="tab" aria-selected="true" id="js">javascript</button>
+          <button role="tab" aria-selected="false" id="ruby">ruby</button>
+          <button role="tab" aria-selected="false" id="php">php</button>
+        </div>
+      </div>
+      <div class="tabpanel" role="tabpanel" aria-labelledby="js">
+        <p>javascript is great</p>
+      </div>
+      <div class="tabpanel" role="tabpanel" aria-labelledby="ruby" hidden>
+        <p>ruby rules</p>
+      </div>
+      <div class="tabpanel" role="tabpanel" aria-labelledby="php" hidden>
+        <p>php sux</p>
+      </div>
+    </div>
+
+    <script src="./tabs/tabs.js"></script>
+  </body>
+</html>
