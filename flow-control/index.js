@@ -67,3 +67,40 @@ if ({}.keys) {
 } else {
   console.log(false);
 }
+
+console.clear();
+
+// coersion is turning a non boolean type into a value
+
+const firstName = 'dan';
+console.log(!firstName);
+
+const count = 2;
+let word;
+
+if (count === 1) {
+  word = 'item';
+} else {
+  word = 'items';
+}
+
+let sentence = `you have ${count} ${word} in your cart`;
+
+console.log(sentence);
+
+const tCount = 1;
+let tWord;
+
+tCount === 1 ? tWord = 'item' : tWord = 'items';
+
+let tSentence = `you have ${tCount} ${tWord} in your cart`
+
+console.log(tSentence);
+
+// conditional abuse
+  // react example:
+
+  // {isAdmin && showAdminBar()}
+
+if (true){ console.log('if statement one liner'); }
+if (true) console.log('if statement one liner with no brackets');
