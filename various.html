@@ -6,6 +6,69 @@
     <title>various</title>
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
     <script src="./objects/index.js"></script>
+    <script>
+      let name1 = "dan";
+      let name2 = "dan";
+      console.log(name1 === name2);
+      name1 = "jillian";
+      console.log(name1 === name2);
+      console.log(name1);
+      name1 = name2;
+      console.log(name1 === name2);
+      console.log(name1);
+
+      const person11 = {
+        first: "dan",
+        last: "hemerlein",
+        clothing: {
+          shirts: 10,
+          pants: 2,
+        },
+      };
+
+      const person22 = {
+        first: "dan",
+        last: "hemerlein",
+      };
+      // contents of an object are different from the contents of a string
+      // the fact that these two objects have the same contents is a coincidence
+      console.log(person11 === person22);
+
+      const person33 = person11;
+      person33.first = "jillian";
+      console.log(person33.first);
+      console.log(person11.first);
+      console.log(person11);
+      console.log(person22);
+      console.log(person33);
+      // when objects and arrays are copied by reference - we are actually creating a variable that points to the original object or array
+      // person33 is not it's own object
+      // what is one to do if you want to copy something
+      // spread ...
+      // this makes a shallow copy - only goes one level deep
+      const person44 = { ...person11 };
+      console.log(person44);
+      person44.first = "dan";
+      console.log(person44);
+      console.log(person11);
+      // how to make a deep clone of an object
+      // use lodash lol
+
+      const meat = {
+        bacon: 2,
+        sausage: 10,
+      };
+
+      const veggie = {
+        lettuce: 5,
+        carrots: 11,
+      };
+
+      const inv = { ...meat, ...veggie, salmon: 12 };
+      console.log(inv);
+      // objects that are passed into functions and then modified - that external object will be updated - this does not happen to strings
+    </script>
   </body>
 </html>
