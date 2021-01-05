@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>various 3</title>
+  </head>
+  <body>
+    <style>
+      .go {
+        margin: 5rem;
+        background-color: white;
+        padding: 5rem;
+        width: 5rem;
+        height: 5rem;
+        border: 1px solid black;
+        transition: all 0.2s;
+      }
+
+      .go.circle {
+        border-radius: 50%;
+      }
+      .go.red {
+        background: tomato;
+      }
+
+      .go.purple {
+        background: palevioletred;
+        color: white;
+      }
+
+      .go.fade-out {
+        opacity: 0;
+      }
+    </style>
+    <!-- <p>hey</p> -->
+    <!-- <button>click me</button> -->
+    <!-- <div class="wrapper"> -->
+    <!-- <p>hey i'm in a wrapper</p> -->
+    <!-- </div> -->
+
+    <div class="go">click me</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <script src="./general/event-loop.js"></script>
+  </body>
+</html>
