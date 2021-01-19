@@ -42,10 +42,14 @@
       border: 1px solid black;
       padding: 1rem;
     }
+
+    .hidden {
+      display: none;
+    }
   </style>
 
   <body>
-    <p class="user"></p>
+    <!-- <p class="user"></p>
     <div class="wrapper">
       <form action="" autocomplete="off" class="search">
         <fieldset>
@@ -54,8 +58,16 @@
         </fieldset>
       </form>
       <div class="recipes"></div>
+    </div> -->
+    <div class="wrapper">
+      <div class="joke">
+        <div class="loader hidden">loading</div>
+        <p>Dad Jokes.</p>
+      </div>
+      <button class="get-joke">Get A Joke</button>
     </div>
     <!-- <script src="./general/apis.js"></script> -->
-    <script src="./general/cors.js"></script>
+    <!-- <script src="./general/cors.js"></script> -->
+    <script src="./general/dad-jokes.js"></script>
   </body>
 </html>
