@@ -1,0 +1,25 @@
+{
+  "name": "beginner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel apis.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danhemerlein/wes-bos-beginner-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danhemerlein/wes-bos-beginner-js/issues"
+  },
+  "homepage": "https://github.com/danhemerlein/wes-bos-beginner-js#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
+}

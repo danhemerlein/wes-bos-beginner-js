@@ -6,8 +6,56 @@
     <title>APIs</title>
   </head>
 
+  <style>
+    .wrapper {
+      /* background: firebrick; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    form {
+      max-width: 500px;
+    }
+
+    fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      margin-bottom: 15px;
+    }
+
+    button[disabled] {
+      cursor: not-allowed;
+    }
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .recipe {
+      border: 1px solid black;
+      padding: 1rem;
+    }
+  </style>
+
   <body>
     <p class="user"></p>
-    <script src="./general/apis.js"></script>
+    <div class="wrapper">
+      <form action="" autocomplete="off" class="search">
+        <fieldset>
+          <input type="text" name="query" value="pizza" />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+      <div class="recipes"></div>
+    </div>
+    <!-- <script src="./general/apis.js"></script> -->
+    <script src="./general/cors.js"></script>
   </body>
 </html>
