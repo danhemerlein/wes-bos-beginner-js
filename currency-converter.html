@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>currency converter</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      width: 420px;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+  </style>
+  <body>
+    <div class="app">
+      <form action="">
+        <div class="flex">
+          <input type="number" name="from_amount" id="" />
+          <select name="from_currency" id="">
+            <option value="">select a currency</option>
+          </select>
+        </div>
+        <div class="flex">
+          <p>in</p>
+          <select name="to_currency" id="">
+            <option value="">select a currency</option>
+          </select>
+        </div>
+
+        <div class="flex">
+          <p>is</p>
+          <p class="to-amount">$0</p>
+        </div>
+      </form>
+    </div>
+    <script src="./general/money.js"></script>
+    <script src="./general/currency-converter.js"></script>
+  </body>
+</html>
