@@ -1,5 +1,7 @@
 import { loader, jokeButton } from './elements.js';
 
+// this is a named export - we can have a lot of these
+
 // what is a header - sort of like sending query parameters
 // accept header
 export async function fetchJoke() {

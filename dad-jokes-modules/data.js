@@ -9,4 +9,5 @@ const buttonText = [
   'that was the worst one',
 ];
 
+// this is a default export - only one per file
 export default buttonText;
