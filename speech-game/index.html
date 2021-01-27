@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>web speech colors</title>
+    <!-- <link rel="stylesheet" href="../../base.css" /> -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      p {
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .color {
+        padding: 1rem;
+        color: whitesmoke;
+      }
+
+      .colors {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .colors p.got {
+        text-decoration: line-through;
+        background: black !important;
+        color: whitesmoke !important;
+      }
+
+      .dark {
+        color: #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Say a Color</h1>
+    <div class="colors"></div>
+    <script src="./speech.js"></script>
+  </body>
+</html>
